@@ -1,0 +1,500 @@
+2012-08-30 (f8aa369): Released version 2.0.5
+2012-08-30 (9d1f696): ObjectMixin: public methods are returned as Callback instead of Closure
+2012-08-30 (adfd8b7): ObjectMixin: getting public methods as Closure has lower priority than getters
+2012-08-30 (1e5b2d7): fixed compatibility with PHP 5.2
+2012-08-30 (d6cfa3a): more specific PhpDoc
+2012-08-30 (6cf7425): typo
+2012-08-30 (ec88dfe): typos
+2012-08-30 (af88db1): typos
+2012-08-30 (a128c9e): tests: equal() replaced with same()
+2012-08-30 (268bd88): Test: require specifically php-cgi
+2012-08-30 (36e1040): Test: added help, fixed error messages
+2012-08-30 (e454690): fixed indent
+2012-08-30 (8c0a36b): tests: fix failed tests
+2012-08-30 (05c6b77): fixed test
+2012-08-30 (af29db1): replace usage of callback() by direct instantiation of Nette\Callback
+2012-08-30 (e28742d): Nette\Callback: added static factory
+2012-08-30 (f32be18): Nette\Callback: prevent wrapping itself as a callback
+2012-08-30 (ee98985): Object: allow traversable objects in event property
+2012-08-30 (230f710): ObjectMixin: allows set of unset property
+2012-08-30 (aecd2c5): ObjectMixin: refactoring, better performance of __call()
+2012-08-30 (41a6502): ObjectMixin: refactoring, removed ClassType::hasEventProperty dependency
+2012-08-30 (b964e1a): Http\Response: cookies are not "flattened" if suhosin.cookie.encrypt is enabled [Closes #719]
+2012-08-30 (eb13ba9): Config: do not generate annotations for internal service in accessors
+2012-08-30 (2e8a83b): Config: fixed iterating over compiler extensions [fixes #720]
+2012-08-30 (627b27e): Config\Compiler: fixed calling `loadConfiguration` of extensions, which were added by else extension
+2012-08-30 (6df268e): Nette Tests: optional sections for Assert matcher
+2012-08-30 (f4e49c5): Tests: prints call stack when reporting an error [Closes #697]
+2012-08-30 (8334ee4): Tests: on linux resolve php executable automatically
+2012-08-30 (5b79b56): Fixes multiple backslash replace
+2012-08-30 (9964bdc): netteForms.js URL a email validation synced with Validator [Closes #707]
+2012-08-30 (2acacc0): Validators: improved email validator
+2012-08-30 (8c5d0dd): Validators: improved URL validator (accepts port number, IP, localhost)
+2012-08-30 (2231f8d): Forms: rewritten SelectBox [Closes #724]
+2012-08-30 (12cf723): Forms: fixed json_encode in 78511c56
+2012-08-30 (8fbf87d): Forms: attribute data-nette-rules is encoded with JSON_UNESCAPED_UNICODE
+2012-08-30 (38c8e11): Latte: UIMacros: removed all restriction of block names; dynamic blocks are recognized by character "$"
+2012-08-30 (ea85835): Latte: fixed output of dynamic {define} [Closes #586] [Closes #677]
+2012-08-30 (4e6b704): Latte: each n:attr must be defined in single tag only once
+2012-08-30 (74565e1): Latte: removed invalid XML detection via <?xml
+2012-08-30 (93e833a): Application: fixed incorrect Range processing in FileResponse [Closes #662]
+2012-08-30 (6109362): UI\Presenter: uses injectPrimary method for direct dependencies
+2012-08-30 (2e29f91): PresenterFactory: calls all methods prefixed with "inject"
+2012-08-30 (5e5da91): Application\RoutingPanel: values are dumped collapsed
+2012-08-30 (5f33aea): Diagnostics: added default host and charset header to default mailer
+2012-08-30 (68a85a7): Database\SqlPreprocessor: added support for statements with ON DUPLICATE UPDATE ?
+2012-08-30 (dfdd858): Database\SqlPreprocessor: arrayMode is detected in regexp loop
+2012-08-30 (86427b1): Database: fixed case-sensitivity & tests
+2012-08-27 (2ae10cc): Debugger: additional info for stream and curl resource dump
+2012-08-27 (6ff0866): Database: better method names
+2012-08-27 (89e6a00): Database: swapped contructor parameters for BC in 2.0.x
+2012-08-27 (99380d6): Database: fixed Selection::find()
+2012-08-27 (adcc8c7): Database: rapidly improved cache performance & fixed cache bug (thanx @matej21)
+2012-08-27 (0ffd0a8): Database: drivers typos
+2012-08-27 (adf0fe1): Database: fixed case-insensitivity foreign keys
+2012-08-27 (00350e3): Database: fixed runtime cache of multiple same targets
+2012-08-27 (322bb4a): Database: fixed DiscoveredReflection & enhanced test data
+2012-08-27 (7d3358f): Database: fixed sharing accessed columns
+2012-08-27 (c379bff): Database: huge memory optimalization, implemented GroupedSelection prototyping (thanks @juzna)
+2012-08-27 (a2cbd95): Database: fixed bug caused by cache-emptying by garbage-collector (thanks @juzna)
+2012-08-27 (50aba31): Database: better related call caching
+2012-08-27 (3eb794b): Database: added test for tag-author relation.
+2012-08-27 (1fb1c6f): Database: fixed caching of referenced entries
+2012-08-27 (74508e4): Database: reverted related call behaviour (32e1458cd53fc8b0d3c6fcc2712b8638e45ff8da)
+2012-08-27 (b0583ec): Database: fixed related call columns caching
+2012-08-27 (5cb787f): Database: Table\Selection refactored into new class SqlBuilder
+2012-07-30 (2f3808e): Released version 2.0.4
+2012-07-30 (dd93994): phpdoc typo
+2012-07-30 (255a822): typo
+2012-07-30 (b1357dd): typo
+2012-07-30 (c2956bb): typo
+2012-07-30 (be521c1): typo
+2012-07-30 (ce196dc): typos
+2012-07-30 (dde134b): typos
+2012-07-30 (e088f2b): typos
+2012-07-30 (3171c9b): typos
+2012-07-30 (5c2327f): missing typehints, phpDoc, typos
+2012-07-30 (525df82): Fixed phpdoc
+2012-07-30 (de92643): typos
+2012-07-30 (16f469b): phpdoc typo
+2012-07-30 (6d28feb): typo
+2012-07-30 (5823560): typo
+2012-07-30 (b92fa64): fixed phpdoc
+2012-07-30 (690f891): tests: disable php_sqlite.dll SQLite 2 removed from PHP 5.4.0 and no longer required
+2012-07-30 (5f4f6bc): tests: fix session.save_path in session storage test
+2012-07-30 (76fc165): Tests: fixed displayed error line
+2012-07-30 (bb0bc4d): ObjectMixin: added support for getting public methods as Closure
+2012-07-30 (63b12cc): tests: improved Nette\Object tests
+2012-07-30 (71ce227): NetteTests: code coverage generator uses file locking
+2012-07-30 (c28839b): Tests: namespace typo
+2012-07-30 (c5e9141): Composer: add autoload files
+2012-07-30 (ebefb14): Neon: recognized ,])} after :
+2012-07-30 (681af3a): Neon: "null" is optional in inline parser
+2012-07-30 (4ba5dd3): Neon: added tests
+2012-07-30 (4b9f8d6): Neon: < > has no special meaning
+2012-07-30 (4e21026): Neon: allow ">" in literal
+2012-07-30 (49256fc): Fix bug of static properties in PhpGenerator - doesn't print static state.
+2012-07-30 (0903f6c): PhpGenerator, tests: fixed bug in dumping associative arrays with numerical keys that are out of order
+2012-07-30 (8ce4b5e): DI\Container: improved exception messages and types
+2012-07-30 (c094ee1): NetteExtension: nette.database may contains array of definitions or single definition
+2012-07-30 (71e1d41): Config: moved check of unknown config sections after extension loading in Compiler
+2012-07-30 (ddf13f8): Config\Compiler: fixed cloning of definition structure
+2012-07-30 (ff30f19): Config: change of the extension class causes cache invalidation
+2012-07-30 (3187ae6): Config\Configurator: cache invalidation based on source files in non-debug-mode. [Closes #615]
+2012-07-30 (8971c95): Config\Configurator: added detection of HTTP_X_FORWARDED_FOR header to detectDebugMode method
+2012-07-30 (f8c44b1): Config: fixed after refactoring
+2012-07-30 (13d45c3): removed extra parameters (thx mhujer) [Closes #623]
+2012-07-30 (ff7c38c): Nette\DateTime::from() always returns Nette\DateTime object
+2012-07-30 (4c2add0): Templating: fixed extractPhp() to preserve line numbers with <?xml ?>
+2012-07-30 (50a217c): Latte: fixed {func()[1]} [Closes #706]
+2012-07-30 (02768df): Latte: fixed mutli template rendering [Closes #269]
+2012-07-30 (f61bf80): Latte: smarter removal of whitespace around {* comments *}
+2012-07-30 (8854f0e): Latte: added exception "unexpected </tag>"
+2012-07-30 (18023a0): Strings::toAscii() removes combining character [Closes #614]
+2012-07-30 (077d99b): Http\RequestFactory: scheme accepts empty HTTPS value (also fixes infinite loop on nginx)
+2012-07-30 (fb0a6f3): Fixed invokation of object in MicroPresenter
+2012-07-30 (420b54a): Route: slash is not encoded to %2F; in routes like '<url .+>' is not required (and recommended) to set FILTER_OUT to NULL.
+2012-07-30 (3bfcd33): UI\PresenterComponentReflection::convertType ignores objects
+2012-07-30 (3d25248): UI\PresenterComponentReflection::convertType: fixed FALSE -> string conversion
+2012-07-26 (492c05a): UI\Presenter: fixed notice "array to string conversion" for PHP 5.4
+2012-07-26 (f535be5): UI\PresenterComponent: loadState() & saveState() uses type checking via convertType() (less strict)
+2012-07-26 (2dff0f1): UI\Presenter: refactoring, createRequest() uses convertType(); object parameters are forbidden now
+2012-07-26 (9beed87): UI\PresenterComponentReflection: improved exception message
+2012-07-26 (99ff974): UI\Presenter: refactoring of non data-loss type conversion to method PresenterComponentReflection::convertType()
+2012-07-26 (9e1c364): typo
+2012-07-19 (323131b): UI\Presenter: templates are searched in the subdirectory where presenter is located
+2012-07-19 (b78485b): Application\PresenterComponent: deprecated getParam() call getParameter() [Closes #619]
+2012-07-19 (4bc2056): netteForms.js: disables HTML5 validation at all browsers
+2012-07-19 (5c515bf): Forms: fixed JSON optimization in BaseControl::getControl()
+2012-07-19 (f20c870): Forms\SelectBox: setItems() can be called after setPrompt()
+2012-07-19 (f1a3cde): SelectBox: Respect prompt when setting items.
+2012-07-19 (381ddc7): Forms: fixed click detection for ImageButton
+2012-07-19 (c5ac62f): UI\Form: fixed loading data to disabled controls
+2012-07-19 (cc856dd): netteForms: allowed international chars in top level domain name for email validator
+2012-07-19 (324818e): Debugger: loopback is not detected as development mode when HTTP_X_FORWARDED_FOR header is present
+2012-07-19 (30c65aa): Diagnostics\Bar: use REQUEST_TIME_FLOAT if exist in time panel
+2012-07-19 (6d1916f): Diagnostics\Bar: is hidden in @media print
+2012-07-19 (9ff3f0e): Selection: fixed possible reading from an uninitialized property $rows
+2012-07-19 (9286cf8): Database: added support for foreign keys in PostgreSQL driver.
+2012-05-15 (a109f73): Debugger: use colors in dump only if terminal supports it
+2012-05-15 (ca7af3a): Database: fixed PgSqlDriver
+2012-05-15 (fd618f4): Database: fixed query conditions.
+2012-05-15 (e3f917f): Database: fixed loadFromFile() (second try)
+2012-04-04 (eb558ae): Released version 2.0.3
+2012-04-04 (f1353db): Configurator: replaced setProductionMode() with setDebugMode()
+2012-04-03 (bf63acf): Forms: htmlId is generated for named forms
+2012-04-03 (c7790ba): Database: fixed loadFromFile() and loading file without semicolon
+2012-04-03 (d573655): Database: fixed multiple-cycle-related call with conditions etc.
+2012-04-03 (1141413): Diagnostics: fixed Call to undefined static method Nette\Diagnostics\Logger::defaultMailer
+2012-04-03 (7e7865e): Http\Response: fixed strange session bug in IE9
+2012-04-03 (90f3dc3): Http\Session: better error message
+2012-03-31 (b3fca71): Released version 2.0.2
+2012-03-31 (aa87fdc): updated composer.json
+2012-03-31 (85e66ba): Composer: Nette is a package
+2012-03-31 (0df6be0): Tests: changed cache keys for Memcached parallel running
+2012-03-31 (bd29a74): Tests: database tests are serialized
+2012-03-31 (42a7072): Tests: support Linux and single job
+2012-03-31 (beca8c7): Tests: don't freeze for long outputs
+2012-03-31 (5989ead): Tests: allow specifying more than one path on command line
+2012-03-31 (e61e885): Tests: run in parallel (reduce time for running all tests from 2 minutes to 10 seconds)
+2012-03-31 (bf3065a): added support for previous exception in PHP 5.2
+2012-03-31 (8bfc10c): NetteExtension: security frame accepts bool values and URL
+2012-03-31 (f83a026): NetteExtension: default X-Frame-Options is SAMEORIGIN
+2012-03-31 (52eb480): NetteExtension: added support for Debugger::$maxLen & Debugger::$maxDepth in neon
+2012-03-31 (4a49a19): NetteExtension: session.autoStart default value is now 'smart' (prevents error in UserPanel etc.)
+2012-03-31 (8f4b0d8): Session: session ID can be regenerated only once per request
+2012-03-31 (0f0935e): Session: fixed PHP bug #61470, session_regenerate_id() does not create session file
+2012-03-31 (4b7bcdc): whitespace
+2012-03-31 (3e67d16): Dedicated internal cache key generator
+2012-03-31 (4233ada): Cache::wrap() accepts dependencies
+2012-03-31 (0a0f889): Strings::replace: fixed bug if $pattern is array
+2012-03-31 (a0d0c75): some occurrences of call_user_func() replaced with callback()->invoke()
+2012-03-31 (c7ae0c2): Callback: refactoring; changed constructor
+2012-03-31 (dbea40e): Validators: fixed compatibility with PHP < 5.2.2
+2012-03-31 (1752728): Database: refactored createRow
+2012-03-31 (0a5a7a9): Database: fixed cache invalidation in GroupedSelection
+2012-03-31 (83d205e): Database: fixed tests
+2012-03-31 (78cf4de): Database: fixed discoveredReflection case sensitivity [Closes #591]
+2012-03-31 (0cb1447): Database: fixed fetchPairs by datetime key
+2012-03-31 (23a486a): Database\GroupedSelection: properties are protected
+2012-03-31 (f7ba179): Database: fixed caching primary key
+2012-03-31 (77eed47): Database: typos in code & tests
+2012-03-31 (59cc681): Database test: added DROP DATABASE to initial SQL
+2012-03-31 (ad6a764): Database test refactoring
+2012-03-31 (4c21c55): Forms: exportRules is protected
+2012-03-31 (cf98934): Forms: TextBase::setValue() converts objects to strings [Closes #596]
+2012-03-31 (2c1734e): Forms: fixed detecting of submit button without value
+2012-03-31 (40b49aa): netteForms: fixed bug in getting value of alone radio button
+2012-03-31 (1924a75): Debugger: syntax highlighted dump() in Linux (thanks to Milo)
+2012-03-31 (4f67a4e): Debugger bluescreen: changed order of items in Environment panel
+2012-03-31 (26158f5): Debugger bluescreen: added $_SESSION to Environment panel
+2012-03-31 (8735b4a): Debugger bar: CSS fix
+2012-03-31 (660a956): Debugger: added $_SERVER[HOSTNAME] (used in CLI) to searched variables in logger
+2012-03-31 (6324997): Debbuger: trims error message to prevent multi-line log line
+2012-03-31 (6584d01): Annotations: support for char \ in annotation name
+2012-03-31 (533b0a2): SMTP connection reset after successful TLS handshake, see RFC 2487 (5.2 Result of the STARTTLS Command)
+2012-03-31 (3ecec64): deprecated Nette\DI\IContainer
+2012-03-31 (bdde205): DI\Diagnostics: fixed formatting of service and factory names
+2012-03-31 (476bfbc): DI\ContainerBuilder: properties changed to getService() in generated code
+2012-03-31 (5a8d5c9): User: onLoggedOut is triggered before user is logged out
+2012-03-31 (9864d07): Html: added missing __isset()
+2012-03-31 (da6da03): ObjectMixin: property $onEvent must be array|Traversable|NULL
+2012-03-31 (dc53634): Snippets: fixed bug in ControlContainer invalidating [closes #390] thanks @JanTvrdik
+2012-03-31 (94d47dc): Presenter: removed final of getPayload() for testing purposes
+2012-03-31 (47949ee): added reverse to Helpers
+2012-03-31 (0d554ac): Templating: fixed extractPhp() to preserve line numbers
+2012-03-31 (2102238): Template: added getHelperLoaders method
+2012-03-31 (13b5e4c): Latte: macro {link} supports modifier
+2012-03-31 (45b4690): Latte: improved naming conventions, renamed some internal constants
+2012-03-31 (8d60c77): Latte: support for {form $form}
+2012-03-31 (7200016): Latte: better error message "Unknown macro" in <style>
+2012-03-31 (ef1e3fd): use callable type hint introduced by PHP 5.4
+2012-03-31 (cba881c): typos
+2012-03-31 (53b40b3): fixed not completely correct phpdoc
+2012-03-31 (aeb4534): whitespace
+2012-03-31 (c44611a): Updated php doc array notation
+2012-03-31 (03bcf61): Nette Tests: higher backtrace limit
+2012-03-31 (aeb4344): Tests: Added tests for Validators::isInRange()
+2012-03-31 (ead8f1e): test: image tests uses uncompressed PNGs. Flip test removed because it leads to different results in different GD versions.
+2012-03-31 (9157d2d): fixed tests
+2012-03-31 (7d0307d): fixed tests
+2012-02-29 (94abcaa): Released version 2.0.1
+2012-02-29 (e743885): Database: fixed Table\Selection::tryDelimite() to not delimite function names [Closes #566]
+2012-02-29 (77bca8d): missing typehints, phpDoc, typos
+2012-02-29 (0d65a05): DI\Helpers: fixed bug in autowiring of undefined services or classes
+2012-02-29 (8827a67): Reflection\Parameter: improved getClassName() implementation
+2012-02-29 (2960b36): Template: include macro is supported only in Nette\Templating\IFileTemplate
+2012-02-29 (3c1bf76): Latte: formatWord() does not quote var.'var' now
+2012-02-28 (0e0efa8): Latte: attribute name can be hypothetically "0"
+2012-02-28 (23d9efe): Latte: fixed  "Backtrack limit was exhausted" in UIMacros.php
+2012-02-28 (a146268): Latte: fixed "Backtrack limit was exhausted" [Closes #555]
+2012-02-28 (5c952c3): Prevent buggy regex compilling in PCRE 8.13
+2012-02-24 (a2404cc): Latte: added MacroNode::$prefix for identification of used n:attr prefix
+2012-02-24 (9384736): Latte: fixed wrong order of expanded n:attr macros
+2012-02-24 (02142d5): Latte: don't apply writer rules to template source
+2012-02-24 (36bef80): Tests: set locale for correct default date format
+2012-02-24 (6391ebe): Tests: ignore file generated by RunTests.bat
+2012-02-24 (99699fa): Tests: requires PDO_SQLite
+2012-02-24 (6ad5ce1): Test: allow spaces in working directory
+2012-02-24 (7255155): Presenter: bugfix param-name wrong detection introduced in rev 40604afd63
+2012-02-24 (d35cb21): UI\Presenter: parameter name must not be an number [Closes #509]
+2012-02-24 (5a04d8b): removed an invalid assertion (it became invalid as a result of refactoring)
+2012-02-24 (f88b62e): DI: nested separator changed to double __ [Closes #523]
+2012-02-24 (bab2beb): DI\Statement::$arguments is always array; fixed argument filtering
+2012-02-24 (4573d8d): Diagnostics\Bar: fixed HTML code for panel if throws Exception
+2012-02-24 (e0e9f4b): Debugger: fixed bluescreen CSS for IE
+2012-02-24 (680d0c7): Debugger: fixed usage of array as 1. argument of enable() [Closes #534]
+2012-02-24 (b7466cb): FileStorage: shut-up operator for mkdir(), directory may already exists
+2012-02-24 (605ae46): Missing namespace.
+2012-02-24 (047b834): Fixed compatibility with PHP < 5.2.5 (debug_backtrace) [Closes #511]
+2012-02-24 (be3b8da): SafeStream: PHP Bug #47997 workaround [Closes #512]
+2012-02-24 (e277be2): Database: fixed columns cache and repeated queries [Closes #506]
+2012-02-24 (dd75176): Database: fixed case sensitivity
+2012-02-24 (21bd540): Database: fixed bug in createJoin by "table.*"
+2012-02-24 (ae3526b): Database: Table\Selection::tryDelimite() supports "DATE(time)"
+2012-02-24 (058ccde): Database: fixed bug in refetching data for the new columns in the non-first related() call
+2012-02-24 (932b3eb): Database: updated tests & typo
+2012-02-24 (8520844): Database: fixed bug in removing extra tables for columns
+2012-02-24 (a4fce31): Database: fixed ref() with DiscoveredReflection, removed useless buggy cache
+2012-02-03 (013c8ee): Released version 2.0
+2012-02-03 (6d93831): Latte: fixed n:snippet
+2012-02-02 (766e500): Merge pull request #508 from voda/SimpleRouter
+2012-02-02 (563a2ae): SimpleRouter: missing ONE_WAY flag
+2012-02-02 (b546e46): Revert "SimpleRouter: missing ONE_WAY flag"
+2012-02-02 (2ee7618): DI\Container: fixed case-sensitivity of service names
+2012-02-02 (2a8a627): Debugger: fixed bluescreen CSS
+2012-02-02 (32511a4): shortcuts
+2012-02-02 (0622e15): ContainerBuilder: fixed naming of anonymous services [Closes #505]
+2012-02-02 (d895eca): UI\Presenter: persistent components are kept across redirect [Closes #21]
+2012-02-02 (078fc91): Forms: Form is submitted although $_POST is empty [Closes #139]
+2012-02-01 (4e118a4): ConnectionPanel: removed invalid style [Closes #239]
+2012-02-01 (9620a2e): NetteExtension: database reflection can be altered [Closes #498]
+2012-02-01 (a066c0e): Debugger: file highlighting normalizes line separator
+2012-02-01 (25ae470): Debugger: highlightFile() generated <pre></pre> and fixes long highlighted lines [Closes #315] [Closes #411] (Thx tomaswindsor)
+2012-02-01 (ea6a535): typos, removed some @internal
+2012-02-01 (2b18fd0): Forms: added parameter $asArray to getValues()
+2012-02-01 (b94e047): Route: exception "Parameter must not be optional" changed to silent ignoring
+2012-02-01 (077cd44): Revert "Route: removed limitation for optional on left side, required on right side"
+2012-02-01 (d337ccb): typos
+2012-02-01 (cec3d84): Latte: ParseException renamed to CompileException (added alias)
+2012-02-01 (e740cc5): Latte: better error message "Unknown macro" in <script>
+2012-02-01 (0b01f60): ContainerBuilder: fixed naming of anonymous services
+2012-01-31 (eedf925): Merge pull request #504 from hrach/patch-2
+2012-02-01 (664ca91): Latte: support for dynamic n:snippet
+2012-02-01 (65efce4): Latte: refactoring, removed $node->data->end
+2012-02-01 (88ff668): Latte: fixed {foreach} optimization II.
+2012-02-01 (930a8b6): Presenter: invalid component name in signal throws BadSignalException
+2012-02-01 (a231168): Debugger: added missing htmlSpecialChars
+2012-02-01 (a71d0e8): Session::start() throws exception only if session has not been started()
+2012-01-31 (885e300): Database: fixed bug!
+2012-01-29 (17d0fba): Merge pull request #497 from hrach/h-db
+2012-01-29 (03642dc): Database: fixed checking column by isset (BC break!)
+2012-01-29 (073ded9): Database: fixed selected-columns caching
+2012-01-29 (942569b): Debugger BlueScreen: added highlightPhp() [Closes #496]
+2012-01-28 (d6dc926): Latte: fixed bug in regexp [Closes #495]
+2012-01-27 (d59bc97): Latte: fixed content of {layout ...}
+2012-01-27 (56a4ed8): Merge pull request #494 from Vrtak-CZ/patch-3
+2012-01-27 (0f3a50d): NetteExtension: supported Nette\Diagnostics\Debugger configuring
+2012-01-27 (2ac540b): public visibility for Compiler::filterArguments and ContainerBuilder:formatPhp
+2012-01-27 (99df196): MicroPresenter: add getContext
+2012-01-27 (2699369): ContainerPanel requires PHP 5.3
+2012-01-27 (8c46dae): fixed service name
+2012-01-27 (e3a8a1b): Config\Configurator: added enableDebugger()
+2012-01-27 (9b9e950): Config\Configurator: added variable environment; section in addConfig() is based on environment instead of productionMode
+2012-01-27 (97b8f63): Config\Container: setProductionMode() accepts IP addresses or computer names
+2012-01-26 (1d9bb87): Merge pull request #493 from hrach/h-database
+2012-01-26 (89087d5): ContainerPanel: updated to use dots
+2012-01-26 (b4feda0): typos
+2012-01-26 (24ab854): Database: fixed aggregation
+2012-01-26 (22d35f6): Database\Table\GroupedSelection: fixed caching & data pointer
+2012-01-26 (d64a1d5): Database: prevent adding the same where-condition
+2012-01-26 (0300351): FileStorage: only files and directories prefixed with _ are processed
+2012-01-26 (1734257): Latte: fixed {foreach} optimization
+2012-01-26 (a1680e1): NetteExtension: added prefixes to some services
+2012-01-26 (842acf9): DI & Config: service name separator changed from '_' to '.'
+2012-01-26 (e7134d2): DI: refactoring, added Container::getMethodName()
+2012-01-26 (387da88): typos
+2012-01-26 (536ad1b): Database\Connection: supplemental driver class can be specified in 4. parameter
+2012-01-26 (7091c83): UI\Control: creates Latte using DI container
+2012-01-26 (7091950): NetteExtension: sends X-Frame-Options header
+2012-01-26 (ef24919): NetteExtension: typos, refactoriong
+2012-01-26 (583208d): Latte: supports {contentType xhtml}
+2012-01-26 (cd66cd7): NetteExtension: added Mail\Message factory
+2012-01-26 (6fa7e7a): DI\ContainerBuilder: eliminated type-checking of aliases
+2012-01-26 (b006f7a): Config\Compiler: removes @property of nested services
+2012-01-26 (93cda33): added test
+2012-01-25 (b205777): Latte: support for n:snippet macro (without inner-)
+2012-01-25 (d9cac4d): Latte: refactoring of $attrCode processing
+2012-01-25 (ceca8d1): Debugger: added visualization of errors in NEON [Closes #448]
+2012-01-25 (c3afb6b): Debugger: added Helpers::findTrace()
+2012-01-25 (96a6df2): Latte: fixed n:snippet macro
+2012-01-25 (a0baa51): DI\ContainerBuilder: supported referencing "nested" services using dot (@extension.service)
+2012-01-25 (e481cb0): RequestFactory: changed order of script path detection [Closes #489]
+2012-01-25 (1924667): typos
+2012-01-25 (fd65c8d): RobotLoader: "disallow:" is optional in netterobots.txt
+2012-01-25 (91edc94): Merge pull request #492 from Vrtak-CZ/patch-2
+2012-01-25 (d3aa4a4): typo
+2012-01-25 (e5341fe): Latte: {include #parent} passes all local variables [Closes #479]
+2012-01-24 (ccbc3fe): Merge pull request #486 from lm/master
+2012-01-25 (869e56b): UI\Presenter: fixed last user checking in restoreRequest()
+2012-01-25 (0b4a3aa): UI\Presenter & Route: FALSE is in URL represented as "0" instead of ""
+2012-01-25 (bf30dd0): Route: short-syntax action can be non-optional
+2012-01-25 (cb0fe39): SimpleRouter: missing ONE_WAY flag
+2012-01-25 (5adaf91): Application: removed $session
+2012-01-25 (c37636f): NetteExtension: fixed session expiration
+2012-01-25 (cb6172c): NetteExtension: fixed service names
+2012-01-25 (9f51310): DI\ServiceDefinition: factories are non-shared by default
+2012-01-25 (1d97427): Config\Compiler: factories can be autowired
+2012-01-25 (8a33217): Config\Compiler: fixed error when 'services' section is missing
+2012-01-25 (64d600a): Latte: Parser removes BOM
+2012-01-25 (4fbb769): Latte: fixed n:tag-macro
+2012-01-23 (741b9bd): Session::exists() respects session name provided via setOptions()
+2012-01-23 (65a350d): Latte: n:tag-if optimized for speed
+2012-01-23 (bd87244): Database: patterns for type detection can be altered [Closes #482]
+2012-01-23 (455160f): Database: added IReflection::FIELD_DATE & IReflection::FIELD_TIME
+2012-01-23 (1e2e20f): Database\ConnectionPanel: explain SQL command can be altered
+2012-01-23 (a17f891): Latte: support for n:inner-snippet macro
+2012-01-23 (7c3d3e3): Latte: {foreach} optimized for speed
+2012-01-23 (5c7c419): Latte: the output is written to each MacroNode separately. It is possible to generate PHP code later (during closing).
+2012-01-23 (d1a7cfc): Latte: added third parameter to MacroSet:addMacro() for pure n:attr macros instead of using @ (BC break!)
+2012-01-23 (d7de505): Latte: writeAttrsMacro() takes $attrCode from all macros
+2012-01-23 (05f03af): Latte: variable MacroNode::$htmlNode is set for n:attr macros
+2012-01-23 (e343ace): typos
+2012-01-23 (8a410d0): Latte: added MacroNode::$openingCode, $closingCode & $attrCode, changed return value of Compiler::expandMacro(), IMacro::nodeOpened() and nodeClosed() (BC break!)
+2012-01-23 (e157f9a): Latte: removed MacroNode::close()
+2012-01-23 (24f668f): UIMacros: fix: {var} macros works with layout extending
+2012-01-22 (04243ee): Session: comparing of serializationVersion fixed (thx mcmatak)
+2012-01-22 (f142e29): UI\Presenter & UIMacros: layout file is determined only if the template uses layout; (BC break, variable $template->layout is no longer set)
+2012-01-21 (6834b1c): Session: fixed checking expiration of missing variables
+2012-01-21 (db99401): Http\UserStorage: checks if login expiration is not greater than session expiration
+2012-01-21 (d099ca0): UI\Form: form is not submitted if request is restored
+2012-01-21 (e76341f): UI\Presenter: store & restoreRequest() checks if original and current user ID are the same
+2012-01-21 (0c2b3e0): UI\Presenter: restoreRequest() keeps flash messages [Closes #29]
+2012-01-21 (db99f05): Application: storeRequest() and restoreRequest() moved to UI\Presenter (BC break!)
+2012-01-21 (f15d036): NetteExtension: executed only services tagged as 'run' => TRUE [Closes #478]
+2012-01-21 (f1ee2eb): NetteExtension: ContainerPanel is optional
+2012-01-21 (72d0cb6): NetteExtension: fixed invalid parameter $config['productionMode'] [Closes #481]
+2012-01-21 (6624888): Strings::replace() ignores errors triggered in callback
+2012-01-21 (ded680b): Strings & RegexpException refactoring
+2012-01-21 (02c9da8): Latte: {include #this} passes all local variables [Closes #479]
+2012-01-19 (2926128): Form macro {formContainer}
+2012-01-19 (cec9842): DI\ContainerPanel refactoring
+2012-01-19 (9383ebb): Merge pull request #475 from Vrtak-CZ/feature/dicBar
+2012-01-19 (9868305): Debugger: added $collapses to clickableDump()
+2012-01-19 (90f3deb): DI: add debug bar panel for Container
+2012-01-19 (559a17c): Config\Compiler: added support for code completion in nested services
+2012-01-19 (378d837): ContainerBuilder::sanitizeName fixed bug
+2012-01-19 (b6ead5a): NetteLoader: checks for file existence
+2012-01-19 (d9229b2): Latte: FormMacros stores copy of $form in $_form to avoid accidentally overwriting.
+2012-01-19 (83a8de1): umask(0) called in loader.php [Closes #472]
+2012-01-19 (be353eb): Configurator::$parameters is protected [Closes #473]
+2012-01-18 (418939c): UserPanel: template fix
+2012-01-18 (1676571): Debugger: fixed garbage content when zlib.output_compression is enabled
+2012-01-18 (cf627d3): Merge pull request #471 from tomaswindsor/patch-1
+2012-01-18 (192c284): annotation fix
+2012-01-17 (10e34a2): whitespace
+2012-01-17 (fea7cd6): MemcachedStorage: supports connection pool
+2012-01-17 (8c27bf7): UI\Presenter: InvalidLinkException throwed in canonicalize() is catched
+2012-01-17 (8cbf1b1): UI\Presenter: type mismatch of parameters passed to methods action-, render- and handle- throws BadRequestException or InvalidLinkException instead of silent type juggling
+2012-01-17 (0e6c915): UI\Presenter: non-scalar parameters are not passed to methods action-, render- and handle- if they are not explicitly specified as array type (major BC break!)
+2012-01-17 (32331be): removed Reflection\Method::invokeNamedArgs(), Callback::invokeNamedArgs() and Reflection\Method::getDefaultParameters(); Required functionality moved to PresenterComponentReflection
+2012-01-17 (a93bf97): UI\Presenter: fixed bug when using non-scalar action or signal
+2012-01-17 (603d12b): tests: removed Environment
+2012-01-17 (afbc319): NetteExtension: added factory createCache()
+2012-01-16 (457d8b2): added new tests
+2012-01-16 (29412c1): Database\Connection: supplemental driver loading is case-sensitive now
+2012-01-16 (6251d4e): RobotLoader: does not remove NetteLoader
+2012-01-16 (7bae7c1): Configurator: added createLoader()
+2012-01-16 (2f1eec8): UI\Presenter: adedd error()
+2012-01-16 (534412d): Latte: better XML mode detector
+2012-01-16 (a209f87): NetteExtension: added database configuration
+2012-01-16 (7859da8): NetteExtension: initialize Nette Application panel in Debugger
+2012-01-16 (3748608): NetteExtension: enhanced configuration options
+2012-01-16 (8c88ca3): DI\NestedAccessor: supports calling "create" methods
+2012-01-16 (6f4a4a6): DI\ContainerBuilder: services are sorted alphabetically
+2012-01-16 (ec46c65): DI\ContainerBuilder: fixed self-service reference in formatStatement()
+2012-01-16 (50be378): Debugger bluescreen: every panel can be added only once
+2012-01-16 (fd66cd0): Session::setOptions() added support for camelCase
+2012-01-16 (a2bedb7): PhpGenerator\Helpers: ::? formats as member
+2012-01-16 (904ab90): NetteLoader: Nette\Http\User added to $renamed
+2012-01-15 (fcd7458): NetteLoader: correct directory separators [Closes #468]
+2012-01-15 (ba80a19): Templating\DefaultHelpers renamed to Helpers (BC break!)
+2012-01-15 (c1effbf): NetteLoader: added $renamed for renamed classes
+2012-01-15 (afce066): NetteLoader: uses PSR-0 loader, so class names are case-sensitive on Linux now (this is possible BC break)
+2012-01-14 (41bc15d): missing test
+2012-01-14 (56a80cf): Latte: added support for n:attrs in XML
+2012-01-14 (1535432): Latte: removed dependency on Html::$xhtml
+2012-01-14 (593b976): Latte\Compiler: added setContentType(), some constants CONTEXT_ renamed to CONTENT_
+2012-01-14 (7a07f45): Latte: Parser refactoring
+2012-01-12 (1646490): Latte: added n:input macro to FormMacros
+2012-01-12 (101c321): Latte: MacroNode is linked to HtmlNode for n:attr macros
+2012-01-12 (e5859d6): Latte: separated $attrs and $macroAttrs in HtmlNode
+2012-01-12 (c88d3d9): added Nette\Security\Diagnostics\UserPanel
+2012-01-12 (4607955): Debugger Bar: fixed CSS style for dump() to work under #nette-debug
+2012-01-12 (83bec20): Latte: macro {syntax} behaves as unpaired [Closes #353]
+2012-01-12 (455e54e): DateTime: added __toString() & modifyClone()
+2012-01-12 (012ac8d): Merge pull request #463 from pavelbier/patch-1
+2012-01-12 (2dd5e3a): Call to undefined method NUserStorage::onLoggedOut()
+2012-01-12 (c006db1): Latte: curly brackets are allowed inside macro [Closes #161]
+2012-01-12 (83f1533): typos
+2012-01-12 (de7963e): Latte: refactored CONTEXT_ constants in Compiler
+2012-01-12 (17fd23d): Latte: lines to ParseException are added only automatically
+2012-01-12 (e3deb6f): Latte: Parser divided into Parser and Compiler, added class Token
+2012-01-12 (72cdbef): Latte\Parser is renamed to Compiler (this is preparation for the division into two parts) (BC break!)
+2012-01-12 (863dab2): RobotLoader: compatibility with parsing scripts written in newer version of PHP
+2012-01-12 (e5dc954): added Database\Helpers, refactoring
+2012-01-11 (110cb86): typos
+2012-01-11 (1427870): User: added the possibility to log in using the IIdentity
+2012-01-11 (72ccd54): PHP 5.4 compatibility
+2012-01-11 (900120e): IUserStorage: changed interface
+2012-01-11 (2ae2e46): User: deprecated setNamespace() & getNamespace()
+2012-01-11 (7066565): User & IUserStorage moved to Nette\Security; IUser removed (BC break!)
+2012-01-11 (07c2aaa): User: The session storage management was decoupled from User to separate UserStorage class. It allows to define own different User class without need of copying or again-coding all the needed sessions stuff. [Closes #208]
+2012-01-11 (cf92fb0): User::getRoles returns authenticatedRole if authentizator returns no roles
+2012-01-11 (f3fd4c6): SafeStream: support for "c" mode [Closes #454]
+2012-01-10 (323f2ef): Merge pull request #461 from hrach/f-driver-reflection
+2012-01-10 (0bf362c): Merge pull request #457 from hrach/h-database-isset
+2012-01-10 (4c7546c): Merge pull request #460 from HosipLan/bug/tags-only-for-shared-services
+2012-01-10 (2b96d59): Merge pull request #455 from tomaswindsor/master
+2012-01-10 (9abd76e): Merge pull request #456 from bojovyletoun/reverse
+2012-01-10 (64c7e91): Database: reflection reload cache
+2012-01-10 (f6d3b1c): Database\Reflection\DiscoveredReflection: uses driver reflection
+2012-01-10 (170193a): Database: MySQL driver - implemented getForeignKeys()
+2012-01-10 (e7b7489): Database: implemented primary into getColumns()
+2012-01-10 (752ea65): ContainerBuilder: findByTag now intentionally ignores non-shared services
+2012-01-10 (e06f442): Database: fixed isset() call on ActiveRow
+2012-01-10 (14c3c89): String::reverse() added test.
+2012-01-10 (8dc32af): Strings::reverse added. uses UTF-32[L/B]E
+2012-01-10 (74fa1d0): annotation description fixes
+2012-01-09 (99ef7a5): Forms\SelectBox: fixes using two or more spaces in option key
+2012-01-09 (a2a91bb): Config\Compiler: added auto-generated "{factory}Factory" services (experimental)
+2012-01-09 (724ce43): Config\Compiler: using service and factory with the same name throws exception
+2012-01-09 (1e06daa): DI\ContainerBuilder: $meta is generated only for shared services
+2012-01-09 (6357be7): Merge pull request #453 from vojtech-dobes/robot-loader-register-fluent
+2012-01-09 (cbfd32d): RobotLoader::register() provides a fluent interface
+2012-01-09 (1e7e537): Latte: used escapeICal() with {contentType text/calendar} [Closes #447] (thx Werkov)
+2012-01-09 (825195a): typos, phpDoc
+2012-01-09 (8892d88): Configurator: works correctly with empty tempDir
+2012-01-09 (c0c3e3b): Latte: refactoring, improperly used public properties replaced with setters/getters
+2012-01-09 (a18040d): Database: SqlLiteral is immutable object
+2012-01-09 (fe9f3b4): Database: refactoring, improperly used public properties replaced with setters/getters
+2012-01-09 (9f87786): UI\PresenterComponent: fixed missing reference between persistent property and parameters array (second try)
+2012-01-09 (f4fb93d): Template: removed $warnOnUndefined (BC break!)
+2012-01-09 (98c01ea): Database\Drivers: $supports replaced with method isSupported()
+2012-01-09 (28982bf): tests: removed TestErrorException, errors fails immediately
+2012-01-09 (2bb600c): tests: added Assert::error
+2012-01-06 (20703ea): Merge pull request #451 from Vrtak-CZ/feature/sysContainerTypeHint
+2012-01-06 (fe68633): Presenter: better typehint for context
+2012-01-06 (b028057): UI\PresenterComponent: fixed missing reference between persistent property and parameters array.
+2012-01-06 (2c1d38c): Config: getContainer() renamed to getContainerBuilder() (BC break!) [Closes #450]
+2012-01-06 (8ac02f6): Application: $allowedMethods is deprecated
+2012-01-04 (fd97fd4): Some other methods provides a fluent interface
+2012-01-03 (e0156fa): typos
+2012-01-03 (ca8b0f0): Http\RequestFactory: scriptPath/baseUrl is detected using longest common substring
+2012-01-02 (479b6a0): DI\ContainerBuilder: added support for PHP literals in service setup using "?"
+2012-01-02 (031d3f6): DI\CompilerExtension: added loadFromFile() helper method
+2012-01-02 (94d9938): DI\CompilerExtension: changed API, removed $container and $config parameters from loadConfiguration(), beforeCompile() and afterCompile() (BC break!)
+2012-01-02 (d04fb7f): DI: getByClass() renamed to getByType() (BC break!)
+2012-01-02 (1841c63): Merge pull request #442 from tomaswindsor/patch-3
+2012-01-02 (bba3c4f): Updated copyright notices for 2012. Oh yeah, it's so much useless commit. But Mayans claim this is the last one.
+2012-01-02 (d1aea5f): UI\Presenter::getContext() is not deprecated
