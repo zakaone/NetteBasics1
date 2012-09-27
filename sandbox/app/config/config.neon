@@ -21,13 +21,16 @@ common:
 
 		database:
 			default:
-				dsn: 'mysql:host=localhost;dbname=test'
-				user:
-				password:
+				dsn: 'mysql:host=localhost;dbname=NetteBasics1'
+				user: 'root'
+				password: 'Bla34char'
 
 
 	services:
-		authenticator: Authenticator
+		authenticator: Todo\Authenticator
+		tasks: Todo\TaskTable
+		users: Todo\UserTable
+		tasklists: Todo\TaskListTable
 
 
 	factories:

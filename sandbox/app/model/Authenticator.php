@@ -1,6 +1,9 @@
 <?php
 
+namespace Todo;
+use Nette;
 use Nette\Security as NS;
+
 
 
 /**
@@ -13,9 +16,9 @@ class Authenticator extends Nette\Object implements NS\IAuthenticator
 
 
 
-	public function __construct(Nette\Database\Connection $database)
+	public function __construct(UserTable $users)
 	{
-		$this->database = $database;
+		$this->users = $database;
 	}
 
 
